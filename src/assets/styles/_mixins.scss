@@ -1,0 +1,49 @@
+@import "variables";
+
+@mixin footer-content-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: $title-color;
+}
+
+@mixin footer-content-text {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $menu-text-color;
+}
+
+@mixin head-lora-50 {
+  color: white;
+  font-family: Lora, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+@mixin head-lora-38 {
+  color: $title-color;
+  font-family: Lora, sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+@mixin head-lora-26 {
+  color: $title-color;
+  font-family: Lora, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+@mixin card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: $title-color;
+}
+
+@mixin card-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $menu-text-color;
+}

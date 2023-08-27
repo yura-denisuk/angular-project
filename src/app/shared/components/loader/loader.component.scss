@@ -1,0 +1,56 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(74, 74, 74, 0.8);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    animation: loader .8s linear infinite;
+
+    @keyframes loader {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      12.5% {
+        transform: rotate(45deg);
+      }
+
+      25% {
+        transform: rotate(90deg);
+      }
+
+      37.5% {
+        transform: rotate(135deg);
+      }
+
+      50% {
+        transform: rotate(180deg);
+      }
+
+      62.5% {
+        transform: rotate(225deg);
+      }
+
+      75% {
+        transform: rotate(270deg);
+      }
+
+      87.5% {
+        transform: rotate(315deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+

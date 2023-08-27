@@ -1,0 +1,67 @@
+@import "../../../../assets/styles/_variables.scss";
+
+.header {
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .header-menu {
+      margin-left: 100px;
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 30px;
+        min-width: 429px;
+
+        li {
+          list-style: none;
+          border-bottom: 1px solid transparent;
+
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            color: $menu-text-color;
+            cursor: pointer;
+            text-decoration: none;
+
+            &.active {
+              color: $title-color;
+            }
+          }
+        }
+      }
+    }
+
+    .header-phone {
+      margin-left: 257px;
+      min-width: 144px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $title-color;
+      text-decoration: none;
+    }
+
+    .header-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 89px;
+      gap: 7px;
+
+      .header-entrance {
+        min-width: 160px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $menu-text-color;
+        text-decoration: none;
+        padding-bottom: 2px;
+        cursor: pointer;
+      }
+    }
+  }
+}

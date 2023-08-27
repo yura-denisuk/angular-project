@@ -1,0 +1,129 @@
+@import "../../../../assets/styles/_variables.scss";
+@import "../../../../assets/styles/_mixins.scss";
+@import "../../../../assets/styles/_global.scss";
+
+.footer {
+  background: $footer-color;
+  padding-top: 40px;
+  padding-bottom: 54px;
+
+  .container {
+
+    .footer-content-up {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 40px;
+
+      .footer-menu {
+        margin-left: 40px;
+
+        nav ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 20px;
+
+          li {
+            list-style: none;
+            border-bottom: 1px solid transparent;
+
+            &.active {
+              color: $title-color;
+            }
+
+            a {
+              font-size: 16px;
+              font-weight: 500;
+              color: $menu-text-color;
+              cursor: pointer;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-content-middle {
+      display: flex;
+      align-items: flex-start;
+
+      .footer-address {
+        max-width: 253px;
+        margin-right: 60px;
+
+        .footer-title {
+          @include footer-content-title;
+          margin-bottom: 10px;
+        }
+
+        .footer-text {
+          @include footer-content-text;
+        }
+      }
+
+      .footer-phone {
+        max-width: 153px;
+        margin-right: 60px;
+
+        .footer-title {
+          @include footer-content-title;
+          margin-bottom: 10px;
+        }
+
+        .footer-text {
+          @include footer-content-text;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+
+        .footer-button {
+          width: 153px;
+          box-sizing: border-box;
+          margin-top: 10px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      .footer-email {
+        max-width: 127px;
+        margin-right: 60px;
+
+        .footer-title {
+          @include footer-content-title;
+          margin-bottom: 10px;
+        }
+
+        .footer-text {
+          @include footer-content-text;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      .footer-social {
+        max-width: 203px;
+
+        .footer-title {
+          @include footer-content-title;
+          margin-bottom: 10px;
+        }
+
+        .footer-icons {
+          display: flex;
+          gap: 12px;
+        }
+      }
+    }
+
+    .footer-content-down {
+      margin-top: 6px;
+      @include footer-content-title;
+    }
+  }
+}
